@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "course",
+            "otherEntityName": "course",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "teacher"
+        },
+        {
+            "relationshipName": "school",
+            "otherEntityName": "school",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "teacher"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "subject",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170206224347",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "teacher",
+    "pagination": "infinite-scroll"
+}
